@@ -163,6 +163,10 @@ ul {
   display: none;
 }
 
+biopic span{
+  float: left;
+}
+
 img {
   padding: 10px;
 }
@@ -177,6 +181,10 @@ button {
 
 #lets-connect {
   text-align: center;
+}
+
+.project-entry img {
+  width: 80%;
 }
 
 /* Media queries to handle various device widths */
