@@ -33,7 +33,7 @@ var projects = {
 	"projects" : [
 	{
 		"title" : "Netease micro major",
-		"dates" : "",
+		"dates" : "2016-08",
 		"description" : "Mook a educaitonal Web App's fontend",
 		"images" : "http://i1.piimg.com/576415/6fa68519c94544a2.png"
 	}
@@ -75,8 +75,7 @@ var education = {
 bio.display = function(){
 	HTMLheaderName = HTMLheaderName.replace('%data%','Anson Chan');
 	HTMLheaderRole = HTMLheaderRole.replace('%data%','Web Developer');
-	$("#header").prepend(HTMLheaderRole);
-	$("#header").prepend(HTMLheaderName);
+	$("#header").prepend(HTMLheaderName,HTMLheaderRole);
 	HTMLmobile = HTMLmobile.replace('%data%',bio.contacts.mobile);
 	$("#topContacts").append(HTMLmobile);
 	$("#footerContacts").append(HTMLmobile);
@@ -91,9 +90,8 @@ bio.display = function(){
 	$("#footerContacts").append(HTMLlocation);
 
 	HTMLbioPic = HTMLbioPic.replace('%data%','http://i1.piimg.com/576415/2ea70a2a3a38c7ca.jpg');
-	$("#header").append(HTMLbioPic);
 	HTMLwelcomeMsg = HTMLwelcomeMsg.replace('%data%',bio.welcomeMessage);
-	$("#header").append(HTMLwelcomeMsg);
+	$("#header").append(HTMLbioPic,HTMLwelcomeMsg);
 
 	if(bio.skills.length > 0){
 	 	$("#header").append(HTMLskillsStart);

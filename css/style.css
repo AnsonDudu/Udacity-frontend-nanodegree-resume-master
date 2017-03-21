@@ -21,7 +21,7 @@ h6 {
 .education-entry,
 .work-entry,
 .project-entry,
-.online-entry{
+.online-entry {
   padding: 0 5%;
 }
 
@@ -231,3 +231,4 @@ button {
   .biopic {
     display: block;
   }
+}
